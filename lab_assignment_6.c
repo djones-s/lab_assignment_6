@@ -2,19 +2,20 @@
 
 int search(int numbers[], int low, int high, int value) 
 {
+	int search(int numbers[], int low, int high, int value) 
+{
 	int middle;
 	
 	if(low <= high)
 	{
 		middle = (low+high)/2;
-		if(value < number[middle])
-			return search(numbers, low, mid-1, value);
-		else if(value > value(middle)
+		if(value < numbers[middle])
+			return search(numbers, low, middle-1, value);
+		else if(value > numbers[middle])
 			return search(numbers, middle + 1, high, value);
-		else if(middle == value)
-			return middle;
-}
-			return -1;
+		else return middle;
+    }
+	return -1;
 }
 
 
